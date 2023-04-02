@@ -33,10 +33,3 @@ func (s *Server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 func (s *Server) Listen(port string) {
 	http.ListenAndServe(port, s)
 }
-
-func compose(middleware []HandlerFunc) HandlerFunc {
-
-	return func(ctx *Context, next NextFunc) {
-
-	}
-}
