@@ -9,7 +9,7 @@ type Server struct {
 	middleware []HandlerFunc
 }
 
-func (s *Server) NewServer() *Server {
+func NewServer() *Server {
 	return &Server{
 		middleware: make([]HandlerFunc, 0, 10),
 	}
